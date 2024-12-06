@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf_8">
+<style>
+  #outside{
+width:400px;
+height:300px;
+position:absolute;/*pour pouvoir changer la position*/
+top:50%;/*le haut*/
+left:50%;/*la gauche*/
+transform:translate(-50%,-50%);/*le milieu*/
+background-color: gray;
+
+  }
+  #inside{
+    position:absolute;/*pour pouvoir changer la position*/
+top:50%;/*le haut*/
+left:50%;/*la gauche*/
+transform:translate(-50%,-50%);/*le milieu*/
+background-color: aquamarine;
+width:340px;
+height:240px;
+text-align: center;
+background-color: aqua;
+    
+  }
+  #time{
+    width:100%;
+    height:200px;
+    color:white;
+    font-size: 46px;
+    background-color: black;
+  }
+#date{
+  height: 40px;
+  background-color:rgb(206, 202, 202);
+  font-size: 22px;
+  
+
+}
+#setTime,#setDate{
+  margin: 0%;
+}
+
+input[type="color" i]{
+  border:0px solid black;
+  background-color: black;
+  line-height: 200px;
+}
+  </style>
+ 
+</head>
+<body id="bod" >
+  <main id="outside">
+    <main id="inside">
+
+   
+    <aticle id="time">
+      <h1 id="setTime">23:00:00</h1>
+    </aticle>
+    <aticle id="date">
+      <h4 id="setDate">11-11-2022</h4>
+    </aticle>
+    <br>
+    <aticle id="color">
+      <input type="color" id="setColor" onchange="getcolor()"></aticle>
+    </main >
+  </main>
+
+ 
+  
+  <script src="prj.js"  ></script>
+ 
+</body>
+
+</html>
+   
+    

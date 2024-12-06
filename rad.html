@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin:0;
+
+            }
+            main{
+               width:360px;
+               background-color: red; 
+               position:absolute;
+               left:50%;
+               transform: translateX(-50%);
+            }
+            header{
+                text-align:center;
+                color:white;
+                height:300px;
+            }
+            header img{
+                height:140px;
+                margin-top: 20px;
+            }
+            header h2{
+                margin: 20px;
+            }
+            #content{
+                height: 500px;
+                background-color: rgb(160, 211, 255) ;
+            }
+            header p {
+                font-size: 22px;
+            }
+            div img{
+                width:300px;
+                height:400px;
+                background-color: rgb(133, 193, 245) ;
+            }
+            #buttons{
+                display:flex;
+                justify-content:center ;
+                padding-top: 20px;
+                background-color: rgb(160, 211, 255) ;
+            }
+            #buttons img{
+                width:45px;
+                height:45px;
+                margin: 0 15px;
+            
+
+            }
+           #volvit{
+text-align: center;
+
+            }
+            #volvit input{
+                width:100%;
+            }
+            input[type="range" i] {
+                background: white;
+                -webkit-appearance: none;
+                height: 10px;
+            }
+            #colors{
+                text-align: center;
+                margin-top: 20px;
+            }
+            #colors button{
+                width:25px;
+                height:25px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="player">
+            <header>
+                <img src="image.jpg" alt="">
+                <h2> live radio </h2>
+                <p id="p">Radio</p>
+            </header>
+     <div id="content">
+     <article id="buttons" >
+        <img src="avant.jpg" id="av" alt="">
+        <img src="" id="pause" alt="">
+        <img src="aprés.jpg" id="ap" alt="">
+    <audio src="001.mp3" id="audio_file" ></audio>
+
+</article>
+<article id="volvit">
+    <h2>son</h2>
+    <input type="range" id="son">
+    <h2>vitesse</h2>
+    <input type="range" id="vit" max="200" min="0">
+    
+</article>
+<article id="colors">
+    <button id="c1"></button>
+    <button id="c2"></button>
+    <button id="c3"></button>
+    <button id="c4"></button>
+</article>
+
+            </div>
+        </main>
+        
+        <script src="rad.js" defer></script>
+    </body>
+</html>
